@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dígalo con mímica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="header.png" alt="Encabezado del juego">
+  </header>
+
+  <main>
+    <div id="palabra">Presioná el botón</div>
+    <button id="btn-palabra">Siguiente palabra</button>
+
+    <div class="puntajes">
+      <div class="equipo rosa">
+        <h2>Equipo ROSA</h2>
+        <div class="puntos" id="puntosA">0</div>
+        <button id="sumarA" class="btn-rosa">+1 punto</button>
+      </div>
+
+      <div class="equipo celeste">
+        <h2>Equipo CELESTE</h2>
+        <div class="puntos" id="puntosB">0</div>
+        <button id="sumarB" class="btn-celeste">+1 punto</button>
+      </div>
+    </div>
+
+    <audio controls>
+      <source src="tararaaa tararaaa.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio HTML5.
+    </audio>
+  </main>
+
+  <footer>
+    <img src="footer.png" alt="Pie del juego">
+  </footer>
+
+  <script src="scrip.js"></script>
+</body>
+</html>

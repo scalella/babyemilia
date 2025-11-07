@@ -1,0 +1,144 @@
+/* -------- ESTRUCTURA GENERAL -------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header img,
+footer img {
+  width: 100%;
+  display: block;
+}
+
+/* -------- CONTENIDO PRINCIPAL -------- */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4vw;
+  gap: 3vh;
+}
+
+#palabra {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  margin: 10px 0;
+  color: #dc88e7;
+  word-wrap: break-word;
+  max-width: 90%;
+}
+
+#btn-palabra {
+  background: #fff;
+  color: #000;
+  border: none;
+  font-size: clamp(1rem, 4vw, 1.4rem);
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#btn-palabra:hover {
+  background: #ddd;
+}
+
+/* -------- EQUIPOS Y PUNTAJE -------- */
+.puntajes {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 5vw;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 600px;
+}
+
+.equipo {
+  background: #1e1e1e;
+  padding: 5vw;
+  border-radius: 15px;
+  flex: 1 1 200px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  min-width: 160px;
+}
+
+.equipo h2 {
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  margin-bottom: 10px;
+}
+
+.puntos {
+  font-size: clamp(1.8rem, 6vw, 2.5rem);
+  margin-bottom: 10px;
+}
+
+button {
+  border: none;
+  font-size: clamp(1rem, 4vw, 1.2rem);
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin: 5px;
+  width: 100%;
+  max-width: 200px;
+}
+
+/* -------- COLORES -------- */
+.btn-rosa {
+  background: #dc88e7;
+  color: #121212;
+}
+
+.btn-rosa:hover {
+  background: #b95cc6;
+}
+
+.btn-celeste {
+  background: #68e4f5;
+  color: #121212;
+}
+
+.btn-celeste:hover {
+  background: #48bcd0;
+}
+
+.rosa h2 {
+  color: #dc88e7;
+}
+
+.celeste h2 {
+  color: #68e4f5;
+}
+
+/* -------- AUDIO -------- */
+audio {
+  margin-top: 30px;
+  width: 80%;
+  max-width: 300px;
+}
+
+/* -------- RESPONSIVE AJUSTES -------- */
+@media (max-height: 500px) {
+  main {
+    gap: 1vh;
+  }
+  #palabra {
+    font-size: 1.2rem;
+  }
+  .puntos {
+    font-size: 1.6rem;
+  }
+}
