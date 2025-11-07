@@ -1,7 +1,7 @@
  // Lista de palabras
 const palabras = [
-  "Cordon umbilical", "Cesárea", "Parto", "Cambiar el pañal", "Calentar la mamadera",
-  "Armar el Cochecito", "Biberón", "Lactancia", "Pediatra", "Siesta del bebé"
+   "Cordon umbilical", "Cesárea", "Parto", "Cambiar el pañal", "Calentar la mamadera",
+  "Abrir el Cochecito", "Epidural", "Mecoño", "Pediatra", "Calostro", "Partera", "Oleo Calcareo", "Algodon", "chupete"
 ];
 
 let disponibles = [...palabras];
@@ -38,4 +38,5 @@ sumarA.addEventListener("click", () => {
 sumarB.addEventListener("click", () => {
   puntosB++;
   puntosBDiv.textContent = puntosB;
+
 });
